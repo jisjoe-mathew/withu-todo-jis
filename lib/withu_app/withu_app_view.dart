@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:provider/provider.dart';
 import 'package:withu_todo/non_ui/constants/strings.dart';
+import 'package:withu_todo/non_ui/services/dialog/dialog_manager.dart';
 import 'package:withu_todo/non_ui/services/navigation/navigation_service.dart';
 import 'package:withu_todo/non_ui/services/task/task_service.dart';
 import 'package:withu_todo/ui/views/home/home_page_view.dart';
@@ -25,6 +27,14 @@ class WithUAppView extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: AppStrings.appTitle,
+        builder: EasyLoading.init(
+            builder: (context, widget) => Navigator(
+                  onGenerateRoute: (settings) => MaterialPageRoute(
+                    builder: (context) => DialogManager(
+                      child: widget,
+                    ),
+                  ),
+                )),
         navigatorKey: NavigationService.instance.navigatorKey,
         home: Consumer<WithUAppViewModel>(
           builder: (context, model, child) {

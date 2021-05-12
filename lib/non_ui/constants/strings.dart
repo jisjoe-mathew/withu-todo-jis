@@ -21,6 +21,13 @@ class AppStrings {
   static const String createBtnTitle = 'Create';
   static const String updateBtnTitle = 'Update';
 
+  //Dialog content
+  static const String warningTitle = 'Are you sure to delete?';
+
+  //Toast content
+  static const String toastComplete = 'Task marked as Completed';
+  static const String toastIncomplete = 'Task marked as In-Complete';
+
   // Labels
   static const String titleLabel = 'Title';
   static const String descriptionLabel = 'Description';
