@@ -14,3 +14,6 @@ This project is a starting point for the WithU test. Please complete the followi
 
 ### PLEASE NOTE
 - Please run on an iOS simulator as i have only added an iOS Firebase  project
+
+### OUTPUT FORM iOS
+![gif](https://user-images.githubusercontent.com/42450389/117932533-17864b80-b31e-11eb-97c4-8b03607b02a5.gif)
