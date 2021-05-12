@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:withu_todo/non_ui/constants/strings.dart';
 import 'package:withu_todo/non_ui/services/navigation/navigation_service.dart';
 import 'package:withu_todo/non_ui/services/task/task_service.dart';
-import 'package:withu_todo/ui/pages/home.dart';
+import 'package:withu_todo/ui/views/home/home_page_view.dart';
 import 'package:withu_todo/ui/widgets/message/error_widget.dart';
 import 'package:withu_todo/withu_app/withu_app_view_model.dart';
 
@@ -29,8 +29,7 @@ class WithUAppView extends StatelessWidget {
         home: Consumer<WithUAppViewModel>(
           builder: (context, model, child) {
             return model.initialized
-                //Todo
-                ? HomeTabsPage()
+                ? HomePageView()
                 : Scaffold(
                     body: model.isBusy
                         ? Center(

@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:withu_todo/non_ui/services/firebase_services/flutterfire_service.dart';
+import 'package:withu_todo/non_ui/services/firebase/flutterfire_service.dart';
 import 'package:withu_todo/non_ui/states/busy_state.dart';
 
 class WithUAppViewModel extends BusyModel {
