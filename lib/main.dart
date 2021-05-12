@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:withu_todo/non_ui/firebase_manager.dart';
 import 'package:withu_todo/ui/pages/home.dart';
-import 'package:withu_todo/ui/widgets/error_widget.dart';
+import 'package:withu_todo/ui/widgets/message/error_widget.dart';
 
 const title = 'WithU';
 
